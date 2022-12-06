@@ -1,9 +1,9 @@
 
-#include <iostream>
-#include <cstdlib>
-#include <string>
+// #include <iostream>
+// #include <cstdlib>
+// #include <string>
 
-using namespace std;
+// using namespace std;
 
 // void myfunction(){
 //     cout << " My name is Ibrahim";
@@ -53,23 +53,23 @@ using namespace std;
 
 //     return 0;
 // }
-int divide(int a, int b)
-{
-    int result;
-    result = a / b;
-    return result;
-}
-int main()
-{
-    int x, y, d;
-    cout << " Enter your first number : ";
-    cin >> x;
-    cout << " Enter your second numebr: ";
-    cin >> y;
+// int divide(int a, int b)
+// {
+//     int result;
+//     result = a / b;
+//     return result;
+// }
+// int main()
+// {
+//     int x, y, d;
+//     cout << " Enter your first number : ";
+//     cin >> x;
+//     cout << " Enter your second numebr: ";
+//     cin >> y;
 
-    d = divide(x, y);
-    cout << " The result is : " << d;
+//     d = divide(x, y);
+//     cout << " The result is : " << d;
 
-    return 0;
-}
+//     return 0;
+// }
 
