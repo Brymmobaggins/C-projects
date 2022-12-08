@@ -1,14 +1,23 @@
 // Write a program to reveres any given integer number
 
 #include <iostream>
-
 using namespace std;
-int main(){
 
+int main()
+{
+    int n, t, r, rev = 0;
+    cout << "Enter any number : ";
+    cin >> n;
+    t = n;
 
-    int x;
-    cout << " Enter any number: ";
-    cin >> x;
+    while (t > 0)
+    {
+        r = t % 10;
+        t = t / 10;
+        rev = rev * 10 + r;
+    }
 
-    
+    cout << "Reverse of number " << n << " is " << rev;
+
+    return 0;
 }
