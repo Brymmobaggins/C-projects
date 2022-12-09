@@ -17,7 +17,7 @@ int main()
 
         if (n < 0)
             negCount++;
-            
+
         else if (n > 0)
             posCount++;
         else
