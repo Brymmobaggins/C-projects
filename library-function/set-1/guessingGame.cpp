@@ -10,7 +10,7 @@ int main()
 {
 
     int randomNum, guess, tries = 0;
-    srand(time(0));
+    srand(time(0)); // seed random number generatorl
     randomNum = rand() % 100 + 1; // genrate random number between 1 and 100
     cout
         << "Number Guessing Game \n\n";
