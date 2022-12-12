@@ -10,23 +10,25 @@ int main()
 {
 
     int randomNum, guess, tries = 0;
-    srand(time(0));               // seed random number generator
-    randomNum = rand() % 100 + 1; // random number between 1 and 100
-    cout << " Guess my number Game\n\n ";
+    srand(time(0));
+    randomNum = rand() % 100 + 1; // genrate random number between 1 and 100
+    cout
+        << "Number Guessing Game \n\n";
 
     do
-    {
-
-        cout << " Enter a Guess between 1 and 100: ";
+    {     
+        cout << " Enter a Number Guess: ";
         cin >> guess;
         tries++;
 
         if (guess > randomNum)
-            cout << " Guess is Too high\n\n";
+            cout << " Guess is too high!\n\n";
         else if (guess < randomNum)
-            cout << " Guess is too high \n\n";
+            cout << " Guess is too low!\n\n";
         else
-            cout << "\n Correct! You got it " << tries << "guesses\n";
+            cout << "\n Correct! you got it in " << tries<< "guesses!\n";
+
     } while (guess != randomNum);
-        return 0;
+
+    return 0;
 }
