@@ -9,62 +9,65 @@
 // #include <ctc
 using namespace std;
 
-float add(float a, float b)
-{
-    int sum;
-    sum = a + b;
-    return sum;
-}
-float subtract(float a, float b)
-{
-    int difference;
-    difference = a - b;
-    return difference;
-}
-float multiply(float a, float b)
+// function to show the options to the user bad explains how to enter the data
+void showChoice()
 {
 
-    int product;
-    product = a * b;
-    return product;
-}
-float divide(float a, float b)
-{
-    int quotient;
-    quotient = a / b;
-    return quotient;
-}
-
-void showChoices()
-{
     cout << "MENU" << endl;
-    cout << "1: add" << endl;
+    cout << "1: Add" << endl;
     cout << "2: Subtract" << endl;
     cout << "3: Multiply" << endl;
     cout << "4: Divide" << endl;
     cout << "5: Exit" << endl;
-    cout << "Enter your choice " << endl;
+    cout << "Enter your choice: " << endl;
 }
 
+// function to return sum
+float add(float a, float b)
+{
+    return a + b;
+}
+// function to return difference
+float subtract(float a, float b)
+{
+
+    return a - b;
+}
+// function  to return product
+float multiply(float a, float b)
+{
+
+    return a * b;
+}
+// function to return quotient
+float divide(float a, float b)
+{
+
+    return a / b;
+}
+
+// The main fuction
 int main()
 {
     float x, y;
     int choice;
     do
     {
-        showChoices();
+        showChoice(); // calling the showChoice functon inside the main function
         cin >> choice;
-        switch (choice)
+        switch ((choice))
+
         {
         case 1:
             cout << "Enter two numbers: ";
             cin >> x >> y;
-            cout << "Sum " << add(x, y) << endl;
+            cout << "Sum is " << add(x, y) << endl;
             break;
+
         case 2:
             cout << "Enter two numbers: ";
             cin >> x >> y;
-            cout << "Difference " << subtract(x, y) << endl;
+            cout << "Difference is " << subtract(x, y) << endl;
             break;
         case 3:
             cout << "Enter two numbers: ";
@@ -78,10 +81,10 @@ int main()
             break;
         case 5:
             break;
-        default:
-            cout << "Invalid input" << endl;
-        }
-    } while (choice != 5);
 
+        default:
+            cout << " Invalid Input" << endl;
+        };
+    } while (choice != 5);
     return 0;
 }
