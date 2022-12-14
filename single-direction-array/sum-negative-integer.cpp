@@ -6,11 +6,11 @@ using namespace std;
 
 int main(){
     int arr[] = {-1,3,5, -2, -3};
-    int sumPos = 0;
+    int sumNeg = 0; // initial a variable for the sum
     
     for(int i = 0; i < 5; i++){
-        if(arr[i] < 0){
-            sumPos += arr[i];
+        if(arr[i] < 0){     // if statement for each index value is less than 0
+            sumNeg += arr[i]; 
         }
     }
     cout << "Sum of all Postive Number is: " << sumPos << endl;
