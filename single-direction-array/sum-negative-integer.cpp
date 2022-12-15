@@ -13,7 +13,7 @@ int main(){
             sumNeg += arr[i]; 
         }
     }
-    cout << "Sum of all Postive Number is: " << sumPos << endl;
+    cout << "Sum of all Postive Number is: " << sumNeg << endl;
 
     return 0;
 }
